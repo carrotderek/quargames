@@ -1,6 +1,7 @@
 import { Divider, Grid, Row, Text } from '@geist-ui/react'
 import { Countdown } from '../Countdown/Countdown'
 import { HeadingInfo } from './components/HeadingInfo/HeadingInfo'
+import { QGDivider } from './components/QGDivider/QGDivider'
 import styles from './Heading.module.css'
 
 export const Heading = () => {
@@ -17,7 +18,11 @@ export const Heading = () => {
           Quargames
         </Text>
 
+        <QGDivider />
         <Countdown />
+        <QGDivider />
+
+        <HeadingInfo />
       </Grid.Container>
     </div>
   )

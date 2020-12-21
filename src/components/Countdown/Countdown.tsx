@@ -1,4 +1,4 @@
-import { Divider, Grid } from '@geist-ui/react'
+import { Grid } from '@geist-ui/react'
 import moment from 'moment'
 import { useEffect, useState } from 'react'
 import { TimeUnit } from './components/TimeUnit/TimeUnit'
@@ -47,9 +47,8 @@ export const Countdown = () => {
       gap={4}
       justify="center"
       alignItems="center"
-      style={{ marginBottom: '40px' }}
+      style={{ marginBottom: '20px' }}
     >
-      <Divider />
       {durationKeys.map((key, index) => (
         <>
           <TimeUnit key={index} duration={key} value={durations[key]} />
