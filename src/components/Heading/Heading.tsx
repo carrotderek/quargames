@@ -1,4 +1,4 @@
-import { Divider, Grid, Row, Text } from '@geist-ui/react'
+import { Grid, Text } from '@geist-ui/react'
 import { Countdown } from '../Countdown/Countdown'
 import { HeadingInfo } from './components/HeadingInfo/HeadingInfo'
 import { QGDivider } from './components/QGDivider/QGDivider'

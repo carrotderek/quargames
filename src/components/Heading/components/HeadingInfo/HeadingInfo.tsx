@@ -1,5 +1,4 @@
 import { Grid, Text, useTheme } from '@geist-ui/react'
-import styles from './HeadingInfo.module.css'
 
 export const HeadingInfo = () => {
   const theme = useTheme()
@@ -21,7 +20,7 @@ export const HeadingInfo = () => {
       </Grid>
       <Grid xs={24}>
         <Text h2 style={{ fontWeight: 500 }}>
-          December 26, 2020
+          December 27, 2020
         </Text>
       </Grid>
     </Grid.Container>
