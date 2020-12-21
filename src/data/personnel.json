@@ -1,0 +1,158 @@
+[
+  {
+    "name": "RedIkaruga",
+    "team": 1,
+    "stats": {
+      "gameSense": 62,
+      "mental": 90,
+      "analytics": 60,
+      "mechanics": 90,
+      "stamina": 82,
+      "focus": 79
+    },
+    "perks": [10, 15, 3]
+  },
+  {
+    "name": "Bossfish",
+    "team": 1,
+    "stats": {
+      "gameSense": 40,
+      "mental": 100,
+      "analytics": 57,
+      "mechanics": 70,
+      "stamina": 84,
+      "focus": 52
+    },
+    "perks": [4, 9, 12]
+  },
+  {
+    "name": "Mikeo2",
+    "team": 1,
+    "stats": {
+      "gameSense": 41,
+      "mental": 100,
+      "analytics": 80,
+      "mechanics": 75,
+      "stamina": 58,
+      "focus": 34
+    },
+    "perks": [10, 5, 4, 20]
+  },
+  {
+    "name": "Boobfish",
+    "team": 1,
+    "stats": {
+      "gameSense": 30,
+      "mental": 63,
+      "analytics": 80,
+      "mechanics": 65,
+      "stamina": 75,
+      "focus": 77
+    },
+    "perks": [16, 4, 1]
+  },
+  {
+    "name": "Gonfreeks",
+    "team": 2,
+    "stats": {
+      "gameSense": 87,
+      "mental": 70,
+      "analytics": 92,
+      "mechanics": 90,
+      "stamina": 88,
+      "focus": 83
+    },
+    "perks": [13, 15, 7]
+  },
+  {
+    "name": "Camcamcam",
+    "team": 2,
+    "stats": {
+      "gameSense": 85,
+      "mental": 70,
+      "analytics": 69,
+      "mechanics": 94,
+      "stamina": 61,
+      "focus": 37
+    },
+    "perks": [6, 15, 22, 21]
+  },
+  {
+    "name": "Tenro",
+    "team": 2,
+    "stats": {
+      "gameSense": 78,
+      "mental": 95,
+      "analytics":52,
+      "mechanics": 81,
+      "stamina": 100,
+      "focus": 47
+    },
+    "perks": [5, 11, 8]
+  },
+  {
+    "name": "Ashurie",
+    "team": 2,
+    "stats": {
+      "gameSense": 73,
+      "mental": 34,
+      "analytics":73,
+      "mechanics": 83,
+      "stamina": 67,
+      "focus": 37
+    },
+    "perks": [5, 6, 8, 21]
+  },
+  {
+    "name": "Carrots",
+    "team": 3,
+    "stats": {
+      "gameSense": 75,
+      "mental": 87,
+      "analytics":81,
+      "mechanics": 77,
+      "stamina": 74,
+      "focus": 55
+    },
+    "perks": [10, 6, 18]
+  },
+  {
+    "name": "Kaymonster",
+    "team": 3,
+    "stats": {
+      "gameSense": 79,
+      "mental": 100,
+      "analytics":82,
+      "mechanics": 82,
+      "stamina": 70,
+      "focus": 78
+    },
+    "perks": [10, 17, 8, 19]
+  },
+  {
+    "name": "PeachyO",
+    "team": 3,
+    "stats": {
+      "gameSense": 92,
+      "mental": 40,
+      "analytics":82,
+      "mechanics": 82,
+      "stamina": 100,
+      "focus": 84
+    },
+    "perks": [13, 20, 2]
+  },
+  {
+    "name": "Soonie",
+    "team": 3,
+    "stats": {
+      "gameSense": 72,
+      "mental": 100,
+      "analytics":81,
+      "mechanics": 65,
+      "stamina": 74,
+      "focus": 55
+    },
+    "perks": [6, 14, 1, 19]
+  }
+]

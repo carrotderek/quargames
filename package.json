@@ -10,6 +10,7 @@
   "dependencies": {
     "@geist-ui/react": "^2.1.0-canary.2",
     "eslint-plugin-prettier": "^3.3.0",
+    "moment": "^2.29.1",
     "next": "10.0.3",
     "prettier": "^2.2.1",
     "react": "17.0.1",
