@@ -1,5 +1,5 @@
 import { Divider, Grid } from '@geist-ui/react'
-import moment, { MomentInput } from 'moment'
+import moment from 'moment'
 import { useEffect, useState } from 'react'
 import { TimeUnit } from './components/TimeUnit/TimeUnit'
 import data from './data/data.json'
@@ -23,7 +23,7 @@ export const Countdown = () => {
     if (date) {
       interval = setInterval(() => {
         const now = moment()
-        const duration = moment.duration(moment(date).subtract(now))
+        const duration = moment.duration(date.diff(now))
 
         setDurations({
           days: duration.days(),
