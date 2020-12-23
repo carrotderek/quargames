@@ -1,6 +1,7 @@
-import { Grid, Text } from '@geist-ui/react'
+import { Display, Grid, Image, Text } from '@geist-ui/react'
 import { Countdown } from '../Countdown/Countdown'
 import { HeadingInfo } from './components/HeadingInfo/HeadingInfo'
+import { Logo } from './components/Logo/Logo'
 import { QGDivider } from './components/QGDivider/QGDivider'
 import styles from './Heading.module.css'
 
@@ -14,14 +15,9 @@ export const Heading = () => {
         alignItems="center"
         direction="column"
       >
-        <Text h1 className={styles.main_title}>
-          Quargames
-        </Text>
+        <Logo />
 
-        <QGDivider />
         <Countdown />
-        <QGDivider />
-
         <HeadingInfo />
       </Grid.Container>
     </div>

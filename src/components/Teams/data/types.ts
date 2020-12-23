@@ -4,10 +4,19 @@ export enum Teams {
   MasterLeague = 3
 }
 
-export const TeamName = {
+export const TeamNames = {
   [Teams.LifeSupport]: 'Life Support',
   [Teams.IceClimbers]: 'Ice Climbers',
   [Teams.MasterLeague]: 'Master League'
+}
+
+export const StatNames = {
+  0: 'Game Sense',
+  1: 'Mental',
+  2: 'Analytics',
+  3: 'Mechanics',
+  4: 'Stamina',
+  5: 'Focus'
 }
 
 export enum Perks {

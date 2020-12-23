@@ -1,0 +1,11 @@
+.logo_container {
+  display: flex;
+  width: 600px;
+  height: 200px;
+}
+
+.img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
