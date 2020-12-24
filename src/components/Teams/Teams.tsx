@@ -1,4 +1,4 @@
-import { Grid, Text, useTheme } from '@geist-ui/react'
+import { Grid, Spacer, Text, useTheme } from '@geist-ui/react'
 import { TeamSection } from './components/TeamSection/TeamSection'
 import { TeamConfigs } from './data/types'
 import styles from './Teams.module.css'
@@ -29,8 +29,8 @@ export const Teams = () => {
           justify="center"
           alignItems="center"
         >
-          <Grid xs={24} justify="center">
-            <Text h2 style={{ fontWeight: 600 }}>
+          <Grid xs={24} justify="center" style={{ textAlign: 'center' }}>
+            <Text id="teams" h2 style={{ fontWeight: 600, fontSize: '48px' }}>
               The teams
             </Text>
           </Grid>
