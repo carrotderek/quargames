@@ -47,7 +47,12 @@ export const Countdown = () => {
       gap={4}
       justify="center"
       alignItems="center"
-      style={{ marginBottom: '20px', padding: '20px 50px', width: '1200px' }}
+      style={{
+        marginBottom: '40px',
+        padding: '20px 50px',
+        width: '1200px',
+        zIndex: 1,
+      }}
     >
       <Grid
         xs={24}

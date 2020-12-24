@@ -1,8 +1,8 @@
-import { Display, Grid, Image, Text } from '@geist-ui/react'
+import { Grid } from '@geist-ui/react'
+import { BackgroundVideo } from '../BackgroundVideo/BackgroundVideo'
 import { Countdown } from '../Countdown/Countdown'
 import { HeadingInfo } from './components/HeadingInfo/HeadingInfo'
 import { Logo } from './components/Logo/Logo'
-import { QGDivider } from './components/QGDivider/QGDivider'
 import styles from './Heading.module.css'
 
 export const Heading = () => {
@@ -15,6 +15,7 @@ export const Heading = () => {
         alignItems="center"
         direction="column"
       >
+        <BackgroundVideo src="/assets/bg.mp4" />
         <Logo />
 
         <Countdown />

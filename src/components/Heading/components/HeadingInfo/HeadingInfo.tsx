@@ -3,7 +3,12 @@ import { Grid, Text, useTheme } from '@geist-ui/react'
 export const HeadingInfo = () => {
   const theme = useTheme()
   return (
-    <Grid.Container justify="center" alignItems="center" direction="column">
+    <Grid.Container
+      justify="center"
+      alignItems="center"
+      direction="column"
+      style={{ zIndex: 1 }}
+    >
       <Grid xs={24}>
         <Text
           b
@@ -15,7 +20,15 @@ export const HeadingInfo = () => {
         ></Text>
       </Grid>
       <Grid xs={24}>
-        <Text h2 style={{ fontWeight: 500 }}>
+        <Text
+          h2
+          style={{
+            color: theme.palette.secondary,
+            fontWeight: 500,
+            letterSpacing: '10px',
+            textTransform: 'uppercase',
+          }}
+        >
           December 27, 2020
         </Text>
       </Grid>

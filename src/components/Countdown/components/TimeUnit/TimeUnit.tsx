@@ -16,9 +16,17 @@ export const TimeUnit = ({ duration, value }: Props) => {
       direction="column"
       style={{
         textAlign: 'center',
+        margin: '0 60px',
       }}
     >
-      <Text style={{ fontSize: '70px', fontWeight: 800, margin: 0 }}>
+      <Text
+        style={{
+          color: theme.palette.secondary,
+          fontSize: '80px',
+          fontWeight: 600,
+          margin: 0,
+        }}
+      >
         {value}
       </Text>
       <Text
