@@ -19,7 +19,7 @@ export const MemberCard = ({ member }) => {
 
   const [ref, inView, entry] = useInView({
     triggerOnce: true,
-    rootMargin: '-100px 0px',
+    rootMargin: '-200px 0px',
   })
 
   if (!showCard && inView) {
@@ -71,6 +71,8 @@ export const MemberCard = ({ member }) => {
         <AnimatedCard
           shadow
           style={{
+            backgroundColor: theme.palette.accents_1,
+            opacity: 0.95,
             ...cardProps,
           }}
           className={styles.card}
