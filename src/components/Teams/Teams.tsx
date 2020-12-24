@@ -30,7 +30,15 @@ export const Teams = () => {
           alignItems="center"
         >
           <Grid xs={24} justify="center" style={{ textAlign: 'center' }}>
-            <Text id="teams" h2 style={{ fontWeight: 600, fontSize: '48px' }}>
+            <Text
+              id="teams"
+              h2
+              style={{
+                color: theme.palette.secondary,
+                fontWeight: 800,
+                fontSize: '56px',
+              }}
+            >
               The teams
             </Text>
           </Grid>

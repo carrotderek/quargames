@@ -1,0 +1,19 @@
+.container {
+  max-width: 100%;
+  padding: 80px 10px 40px;
+  text-transform: uppercase;
+}
+
+.text {
+  font-weight: 300;
+  line-height: 1.75rem;
+  text-transform: none;
+  text-align: left;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: none;
+  margin-bottom: 40px;
+}
