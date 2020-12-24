@@ -1,10 +1,10 @@
-import { Display, Grid, Text } from '@geist-ui/react'
+import { Grid } from '@geist-ui/react'
 import moment from 'moment'
 import { useEffect, useState } from 'react'
 import { TimeUnit } from './components/TimeUnit/TimeUnit'
 import data from './data/data.json'
 
-export const Countdown = () => {
+export const Countdown = ({ style }) => {
   const datetime = moment(data.startDate)
   const [date, setDate] = useState(null)
   const [durations, setDurations] = useState({
@@ -42,6 +42,7 @@ export const Countdown = () => {
   }, [date])
 
   const durationKeys = Object.keys(durations)
+  const animatedStyles = date ? style : null
   return (
     <Grid.Container
       gap={4}
@@ -52,6 +53,7 @@ export const Countdown = () => {
         padding: '20px 50px',
         width: '1200px',
         zIndex: 1,
+        ...animatedStyles,
       }}
     >
       <Grid

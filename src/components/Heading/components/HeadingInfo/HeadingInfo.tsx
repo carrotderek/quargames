@@ -1,13 +1,13 @@
 import { Grid, Text, useTheme } from '@geist-ui/react'
 
-export const HeadingInfo = () => {
+export const HeadingInfo = ({ style }) => {
   const theme = useTheme()
   return (
     <Grid.Container
       justify="center"
       alignItems="center"
       direction="column"
-      style={{ zIndex: 1 }}
+      style={{ zIndex: 1, ...style }}
     >
       <Grid xs={24}>
         <Text
