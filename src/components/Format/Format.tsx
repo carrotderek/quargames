@@ -10,7 +10,7 @@ export const Format = () => {
         style={{ backgroundColor: theme.palette.accents_1 }}
       >
         <Grid.Container
-          style={{ height: '100%', width: '1200px', margin: '0 auto' }}
+          style={{ height: '100%', width: '1200px', margin: '90px auto' }}
           gap={2}
           justify="center"
           alignItems="center"
