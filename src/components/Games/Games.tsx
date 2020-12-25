@@ -26,10 +26,9 @@ export const Games = () => {
         className={styles.container}
         style={{
           backgroundColor: theme.palette.accents_1,
-          flexDirection: 'column',
         }}
       >
-        <Grid.Container gap={2}>
+        <Grid.Container gap={2} style={{ flexDirection: 'column' }}>
           <Multiplayer
             series={gameSeries[GameTypes.SeriesTwo]}
             seriesType={GameTypes.SeriesTwo}
