@@ -1,3 +1,4 @@
+import { Tooltip } from '@geist-ui/react'
 import { PerkConfig } from '../../data/types'
 import styles from './Perk.module.css'
 
@@ -10,8 +11,9 @@ export const Perk = ({ perk, style }: Props) => {
 
   return (
     <div className={styles.container} style={style}>
-      <img src={`/assets/${config.asset}`} className={styles.asset} />
-      <span className={styles.text}>{config.text}</span>
+      <Tooltip text={config.text} type="dark" style={{ width: '48px' }}>
+        <img src={`/assets/${config.asset}`} className={styles.asset} />
+      </Tooltip>
     </div>
   )
 }
