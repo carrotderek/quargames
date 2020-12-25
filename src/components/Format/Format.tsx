@@ -1,4 +1,4 @@
-import { Grid, Text, useTheme } from '@geist-ui/react'
+import { Grid, Image, Text, useTheme } from '@geist-ui/react'
 import styles from './Format.module.css'
 
 export const Format = () => {
@@ -59,6 +59,8 @@ export const Format = () => {
               up. In the event of a tie, a secret tiebreaker game will be
               played.
             </p>
+
+            <Image src="/assets/bracket.png" />
           </Grid>
         </Grid.Container>
       </div>

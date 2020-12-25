@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+}
+
+.asset {
+  object-fit: contain;
+  height: 80%;
+  margin-bottom: 6px;
+}
+
+.text {
+  font-size: 9px;
+  text-transform: uppercase;
+}

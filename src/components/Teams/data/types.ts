@@ -56,29 +56,95 @@ export enum Perks {
   YoungHands = 22
 }
 
-export const PerkName = {
-  [Perks.Captain]: 'Look at me, I\'m the captain now',
-  [Perks.ChimpanzeeBrain]: 'Chimpanzee Brain',
-  [Perks.ConcealedCarry]: 'Concealed Carry',
-  [Perks.ConfidenceEx]: 'Confidence Ex',
-  [Perks.DefiesExpectations]: 'Defies Expectations',
-  [Perks.DogParent]: 'Dog Parent',
-  [Perks.FinalBoss]: 'Final Boss',
-  [Perks.FlashesBrilliance]: 'Flashes of Brilliance',
-  [Perks.LightningRod]: 'Lightning Rod',
-  [Perks.MarriedMan]: 'Married Man Meta',
-  [Perks.MatchFit]: 'Always Match Fit',
-  [Perks.NothingToLose]: 'Nothing to Lose',
-  [Perks.OpenCarry]: 'Open Carry',
-  [Perks.PurpleParse]: 'Purple Parse',
-  [Perks.Sharpshooter]: 'Sharpshooter',
-  [Perks.ShotCaller]: 'Shot Caller',
-  [Perks.SolidPlayer]: 'Solid Player',
-  [Perks.Sports]: 'I like sports',
-  [Perks.Tranquilo]: 'Tranquilo',
-  [Perks.Trickster]: 'Trickster',
-  [Perks.WonderTwin]: 'Wonder Twin Power',
-  [Perks.YoungHands]: 'Young Hands'
+export const PerkConfig = {
+  [Perks.Captain]: {
+    text: 'Look at me, I\'m the captain now',
+    asset: 'captain.svg'
+  },
+  [Perks.ChimpanzeeBrain]: {
+    text: 'Chimpanzee Brain',
+    asset: 'chimpanzee-brain.svg',
+  },
+  [Perks.ConcealedCarry]: {
+    text: 'Concealed Carry',
+    asset: 'concealed-carry.svg'
+  } ,
+  [Perks.ConfidenceEx]: {
+    text: 'Confidence Ex',
+    asset: 'confidence-ex.svg'
+  } ,
+  [Perks.DefiesExpectations]: {
+    text: 'Defies Expectations',
+    asset: 'defies-expectations.svg'
+  } ,
+  [Perks.DogParent]: {
+    text: 'Dog Parent',
+    asset: 'dog-parent.svg'
+  } ,
+  [Perks.FinalBoss]: {
+    text: 'Final Boss',
+    asset: 'final-boss.svg'
+  },
+  [Perks.FlashesBrilliance]: {
+    text: 'Flashes of Brilliance',
+    asset: 'flashes.svg'
+  },
+  [Perks.LightningRod]: {
+    text: 'Lightning Rod',
+    asset: 'lightning-rod.svg'
+  } ,
+  [Perks.MarriedMan]: {
+    text: 'Married Man Meta',
+    asset: 'married-man.svg'
+  },
+  [Perks.MatchFit]: {
+    text: 'Always Match Fit',
+    asset: 'always-match-fit.svg'
+  },
+  [Perks.NothingToLose]: {
+    text: 'Nothing to Lose',
+    asset: 'nothing-to-lose.svg'
+  },
+  [Perks.OpenCarry]: {
+    text: 'Open Carry',
+    asset: 'open-carry.svg'
+  },
+  [Perks.PurpleParse]: {
+    text: 'Purple Parse',
+    asset: 'purple-parse.svg'
+  },
+  [Perks.Sharpshooter]: {
+    text: 'Sharpshooter',
+    asset: 'sharpshooter.svg'
+  },
+  [Perks.ShotCaller]: {
+    text: 'Shot Caller',
+    asset: 'shotcaller.svg'
+  },
+  [Perks.SolidPlayer]: {
+    text: 'Solid Player',
+    asset: 'solid-player.svg'
+  },
+  [Perks.Sports]: {
+    text: 'I like sports',
+    asset: 'sports.svg'
+  },
+  [Perks.Tranquilo]: {
+    text: 'Tranquilo',
+    asset: 'tranquilo.svg'
+  },
+  [Perks.Trickster]: {
+    text: 'Trickster',
+    asset: 'trickster.svg'
+  },
+  [Perks.WonderTwin]: {
+    text: 'Wonder Twin Power',
+    asset: 'wonder-twin-power.svg'
+  },
+  [Perks.YoungHands]: {
+    text: 'Young Hands',
+    asset: 'young-hands.svg'
+  }
 }
 
 export enum GameTypes {

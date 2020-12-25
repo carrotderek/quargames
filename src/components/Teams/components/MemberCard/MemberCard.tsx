@@ -4,6 +4,7 @@ import { useInView } from 'react-intersection-observer'
 import { animated, useChain, useSpring, useSprings } from 'react-spring'
 import { StatNames } from '../../data/types'
 import { QGProgress } from '../../QGProgress/QGProgress'
+import { Perk } from '../Perk/Perk'
 import styles from './MemberCard.module.css'
 
 export const MemberCard = ({ member }) => {
@@ -14,6 +15,7 @@ export const MemberCard = ({ member }) => {
   const statsFillRef = useRef()
   const containerRef = useRef()
   const textRef = useRef()
+  const perkRef = useRef()
   const delayValue = 20
 
   const [ref, inView, entry] = useInView({
@@ -39,7 +41,7 @@ export const MemberCard = ({ member }) => {
     },
   })
 
-  const textProps = useSpring({
+  const opacityProps = useSpring({
     ref: textRef,
     opacity: showCard ? 1 : 0,
     from: { opacity: 0 },
@@ -76,7 +78,10 @@ export const MemberCard = ({ member }) => {
           }}
           className={styles.card}
         >
-          <AnimatedText h3 style={textProps} className={styles.heading}>
+          <AnimatedText
+            h3
+            style={{ textTransform: 'uppercase', ...opacityProps }}
+          >
             {member.name}
           </AnimatedText>
 
@@ -86,13 +91,26 @@ export const MemberCard = ({ member }) => {
                 className={styles.progress_container}
                 style={{ color: theme.palette.secondary }}
               >
-                <AnimatedText small style={textProps}>
+                <AnimatedText small style={opacityProps}>
                   {StatNames[index]}
                 </AnimatedText>
                 <AnimatedQGProgress key={index} percent={value} style={rest} />
               </div>
             )
           })}
+
+          <animated.div
+            style={{
+              display: 'flex',
+              justifyContent: 'space-around',
+              alignItems: 'baseline',
+              ...opacityProps,
+            }}
+          >
+            {member.perks.map((p) => (
+              <Perk perk={p} style={opacityProps} />
+            ))}
+          </animated.div>
         </AnimatedCard>
       </div>
     </Grid>
