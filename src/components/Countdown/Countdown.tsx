@@ -1,4 +1,4 @@
-import { Grid } from '@geist-ui/react'
+import { Grid, Text } from '@geist-ui/react'
 import moment from 'moment'
 import { useEffect, useState } from 'react'
 import { TimeUnit } from './components/TimeUnit/TimeUnit'
@@ -7,6 +7,7 @@ import data from './data/data.json'
 export const Countdown = ({ style }) => {
   const datetime = moment(data.startDate)
   const [date, setDate] = useState(null)
+  const [isPastDue, setIsPastDue] = useState(false)
   const [durations, setDurations] = useState({
     days: null,
     hours: null,
@@ -20,9 +21,11 @@ export const Countdown = ({ style }) => {
 
   useEffect(() => {
     let interval = null
-    if (date) {
+    if (date && !isPastDue) {
       interval = setInterval(() => {
         const now = moment()
+        setIsPastDue(date.diff(now) <= 0)
+
         const duration = moment.duration(date.diff(now))
 
         setDurations({
@@ -43,6 +46,24 @@ export const Countdown = ({ style }) => {
 
   const durationKeys = Object.keys(durations)
   const animatedStyles = date ? style : null
+
+  if (isPastDue) {
+    return (
+      <Text
+        h1
+        style={{
+          fontWeight: 600,
+          margin: '80px 0',
+          textTransform: 'uppercase',
+          zIndex: 1,
+          ...animatedStyles,
+        }}
+      >
+        The games have begun.
+      </Text>
+    )
+  }
+
   return (
     <Grid.Container
       gap={4}
@@ -63,9 +84,7 @@ export const Countdown = ({ style }) => {
         style={{ textAlign: 'center', paddingBottom: '0px' }}
       ></Grid>
       {durationKeys.map((key, index) => (
-        <>
-          <TimeUnit key={index} duration={key} value={durations[key]} />
-        </>
+        <TimeUnit key={index} duration={key} value={durations[key]} />
       ))}
     </Grid.Container>
   )
